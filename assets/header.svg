@@ -18,7 +18,7 @@
   <circle cx="32" cy="25" r="7" fill="#ff5f56"/>
   <circle cx="56" cy="25" r="7" fill="#ffbd2e"/>
   <circle cx="80" cy="25" r="7" fill="#27c93f"/>
-  <text x="440" y="30" fill="#6e7681" font-size="15" text-anchor="middle">agontuk@sec: ~/audits — zsh</text>
+  <text x="440" y="30" fill="#6e7681" font-size="15" text-anchor="middle">agontuk@sec: ~/audits (zsh)</text>
   <text x="838" y="30" fill="#30363d" font-size="13" text-anchor="end">0x41474f4e54554b</text>
   <line x1="1.5" y1="50" x2="878.5" y2="50" stroke="#21262d" stroke-width="2"/>
 
@@ -40,13 +40,13 @@
   </text>
 
   <text x="42" y="284" font-size="19">
-    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> 55+ audits  ·  95+ valid findings  ·  $23K+ rewards</tspan>
+    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> 60+ audits  ·  115+ valid findings  ·  $31K+ paid</tspan>
   </text>
   <text x="42" y="316" font-size="19">
-    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> 2x 1st place  ·  13x top-10  ·  1 critical  ·  40+ high</tspan>
+    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> 3 podiums  ·  14 top-10s  ·  1 critical  ·  40+ high</tspan>
   </text>
   <text x="42" y="348" font-size="19">
-    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> code4rena · sherlock · cantina · immunefi · hackenproof</tspan>
+    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> c4 · sherlock · cantina · immunefi · hackenproof · +3</tspan>
   </text>
 
   <!-- CTA -->
