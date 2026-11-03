@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="270" viewBox="0 0 880 270" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace">
+  <rect x="1.5" y="1.5" width="877" height="267" rx="14" fill="#0d1117" stroke="#21262d" stroke-width="1.5"/>
+
   <defs>
     <linearGradient id="bargrad" x1="280" y1="0" x2="760" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#3fb950"/>
