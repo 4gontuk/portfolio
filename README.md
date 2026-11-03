@@ -1,7 +1,7 @@
 <!-- agontuk · smart contract auditor portfolio · numbers pulled from public profiles, nov 2026 -->
 
 <div align="center">
-  <img src="assets/header.svg" width="880" alt="Agontuk, smart contract auditor. 60+ audits, 115+ valid findings, $31K+ paid" />
+  <img src="assets/header.svg" width="880" alt="Agontuk, smart contract auditor. 55+ public contests, 6 private engagements, 125+ valid findings, $32K+ paid" />
 </div>
 
 <div align="center">
@@ -18,7 +18,7 @@
 
 I go by Agontuk. I break smart contracts for a living.
 
-Since mid 2024 I have joined 60+ audit contests. Code4rena, Sherlock, Cantina, Immunefi, HackenProof. Also CodeHawks, Dual Guard and SpecSiege. I found 115+ real bugs. 40+ are high severity. One is critical. A gold podium, two silvers. Best single prize: $5,000 for 2nd place on Morpho Midnight.
+Since mid 2024 I have joined 55+ public audit contests. Code4rena, Sherlock, Cantina, Immunefi, HackenProof. Also CodeHawks, Dual Guard and SpecSiege. I found 125+ real bugs. 40+ are high severity. One is critical. A gold podium, two silvers. Best single prize: $5,000 for 2nd place on Morpho Midnight.
 
 Most of my work is EVM DeFi. Lending markets, DEXes, perps, vaults, staking. Bridges and NFT systems too. I also work outside the EVM. Rust, Substrate, Starknet, XRPL core. If it holds money, I want to see where it breaks.
 
@@ -32,17 +32,17 @@ These days I mostly take private audits. Ping me if you need one.
 
 ```bash
 $ ./agontuk --stats
-├─ audit contests ............. 60+
-├─ valid findings ............. 115+  (1 critical · 40+ high · 50+ medium)
-├─ paid out ................... $31K+
+├─ audit contests ............. 55+   (public, ranked)
+├─ private engagements ........ 6     (4 Sherlock AE · 2 NDA)
+├─ valid findings ............. 125+  (1 critical · 40+ high · 50+ medium)
+├─ paid out ................... $32K+
 ├─ podiums .................... 3  (1 gold, 2 silver)
 ├─ top-10 finishes ............ 14
-├─ protocols helped ........... 55+
-└─ private jobs ............... 6  (reports sealed)
+└─ protocols helped ........... 55+
 ```
 
 <div align="center">
-  <img src="assets/stats-cards.svg" width="880" alt="60+ audit contests · 115+ valid findings · $31K+ paid · 14x top-10 finishes"/>
+  <img src="assets/stats-cards.svg" width="880" alt="55+ public audit contests · 6 private engagements · 125+ valid findings · $32K+ paid · 14x top-10 finishes"/>
 </div>
 
 *Numbers come from public profiles. Synced Nov 2026. Private stuff stays private.*
@@ -56,7 +56,7 @@ $ ./agontuk --stats
 | [**Code4rena**](https://code4rena.com/@Agontuk) | `Agontuk` | **22 High · 38 Medium** | 🥇 Covenant · 🥈 Sequence Rails · #96 this year · helped 24 protocols |
 | [**Sherlock**](https://audits.sherlock.xyz/watson/neeloy) | `neeloy` / `4gontuk` | **2x 1st · 13x top-10 · 35x top-25** | 52 payouts · #398 all time |
 | [**Cantina**](https://cantina.xyz/u/Agontuk1) | `Agontuk1` / `4gontuk` | 12 contests · **6 High · 4 Medium** | 🥈 2nd on Morpho Midnight, **$5,000**, my biggest prize · Fellowship '24 · primev #6, circuit-puzzles #8, hyperlend #8 |
-| **Sherlock Audit Engine** | `neeloy` | 4 audits · **22+ valid** · $2.8K paid | Kamino MetaVault · Uniswap · Aero · Polygon Heimdall V2 (reports sealed) |
+| **Sherlock Audit Engine** | `neeloy` | **4 private engagements** · 30+ valid · $4.2K paid | Kamino MetaVault finished **#3 of the field** ($1,456.80) · Uniswap · Aero · Polygon Heimdall V2 (reports sealed) |
 | [**Immunefi**](https://immunefi.com/audit-competition/audit-comp-quantus/leaderboard/) | `n3310y` | 4 valid Highs | #9 of 65 on Quantus. Rust L1, post quantum crypto, 64.8k lines of code |
 | **HackenProof** | `-` | **1 Critical** | public bounty |
 
@@ -71,7 +71,7 @@ My sickest finds. Click a protocol name for proof.
 Code4rena rows go straight to the exact finding in the official report, my name on it. Sherlock findings live on [my Sherlock profile](https://audits.sherlock.xyz/watson/neeloy) under the same titles.
 
 <div align="center">
-  <img src="assets/findings-chart.svg" width="640" alt="Findings breakdown: 1 critical, 42+ high, 54+ medium public, 22+ private audit engine"/>
+  <img src="assets/findings-chart.svg" width="640" alt="Findings breakdown: 1 critical, 42+ high, 54+ medium public, 32+ private engagements"/>
 </div>
 
 | # | Severity | Protocol | Platform | Bug type | What happens |
@@ -115,8 +115,10 @@ Non-EVM is not a side quest. I take these contests on purpose.
 
 6 private jobs so far. None of the reports can be shared. The receipts can.
 
+- **4 private engagements on Sherlock Audit Engine.** Not contests. No crowds, no leaderboard grinding. The client puts up scope and a pot, I go in deep, results publish after close.
+- Latest: **Kamino MetaVault.** Finished **#3 of the whole field.** 10 accepted findings, 2 of them high severity. 71.4% precision. **$1,456.80** paid.
+- Before that: **Uniswap, Aero, Polygon Heimdall V2.** 30+ accepted findings across the four. **$4.2K** paid so far.
 - **2 classic private audits.** NDA. That is all I can say about those.
-- **4 on Sherlock Audit Engine.** Kamino MetaVault (finalizing now), Uniswap, Aero, Polygon Heimdall V2. 22+ valid findings there. $2.8K paid so far. One engagement alone paid $2,521.
 - No public links yet. Reports drop when clients publish them. The engagement names are the receipts.
 
 How I work:
@@ -126,7 +128,11 @@ How I work:
 - You get a plain report. What to fix and why. No filler.
 - When you ship fixes, I recheck them.
 
-Solidity / EVM · lending · DEX and perp systems · vaults, staking, restaking · bridges · NFT systems · Starknet (Cairo) · Rust and Substrate L1s.
+What I look at:
+
+<div align="center">
+  <img src="assets/scope-chips.svg" width="760" alt="Scope: Solidity EVM · lending markets · DEX and perps · vaults and staking · bridges · NFT systems · Starknet Cairo · Rust Substrate"/>
+</div>
 
 Want one? [contact.agontuk@gmail.com](mailto:contact.agontuk@gmail.com)
 

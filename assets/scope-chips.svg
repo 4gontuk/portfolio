@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="150" viewBox="0 0 880 150" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace">
+  <!-- row 1 -->
+  <rect x="87" y="10" width="157" height="52" rx="26" fill="#0d1117" stroke="#238636" stroke-width="1.5"/>
+  <text x="165" y="43" font-size="15" font-weight="700" fill="#4ade80" text-anchor="middle">Solidity · EVM</text>
+
+  <rect x="264" y="10" width="175" height="52" rx="26" fill="#0d1117" stroke="#8957e5" stroke-width="1.5"/>
+  <text x="351" y="43" font-size="15" font-weight="700" fill="#c4a5ff" text-anchor="middle">Lending markets</text>
+
+  <rect x="459" y="10" width="139" height="52" rx="26" fill="#0d1117" stroke="#1f6feb" stroke-width="1.5"/>
+  <text x="528" y="43" font-size="15" font-weight="700" fill="#79c0ff" text-anchor="middle">DEX · perps</text>
+
+  <rect x="618" y="10" width="175" height="52" rx="26" fill="#0d1117" stroke="#9e6a03" stroke-width="1.5"/>
+  <text x="705" y="43" font-size="15" font-weight="700" fill="#e3b341" text-anchor="middle">Vaults · staking</text>
+
+  <!-- row 2 -->
+  <rect x="114" y="82" width="103" height="52" rx="26" fill="#0d1117" stroke="#bf3989" stroke-width="1.5"/>
+  <text x="165" y="115" font-size="15" font-weight="700" fill="#db61a2" text-anchor="middle">Bridges</text>
+
+  <rect x="237" y="82" width="139" height="52" rx="26" fill="#0d1117" stroke="#39c5cf" stroke-width="1.5"/>
+  <text x="306" y="115" font-size="15" font-weight="700" fill="#76e3ea" text-anchor="middle">NFT systems</text>
+
+  <rect x="396" y="82" width="175" height="52" rx="26" fill="#0d1117" stroke="#a371f7" stroke-width="1.5"/>
+  <text x="483" y="115" font-size="15" font-weight="700" fill="#d2a8ff" text-anchor="middle">Starknet · Cairo</text>
+
+  <rect x="591" y="82" width="175" height="52" rx="26" fill="#0d1117" stroke="#f0883e" stroke-width="1.5"/>
+  <text x="678" y="115" font-size="15" font-weight="700" fill="#ffa657" text-anchor="middle">Rust · Substrate</text>
+</svg>

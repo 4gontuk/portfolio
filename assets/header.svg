@@ -5,73 +5,63 @@
       <stop offset="1" stop-color="#0d1117"/>
     </linearGradient>
     <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3fb950" stop-opacity="0.35"/>
-      <stop offset="0.5" stop-color="#a371f7" stop-opacity="0.25"/>
-      <stop offset="1" stop-color="#3fb950" stop-opacity="0.35"/>
+      <stop offset="0" stop-color="#3fb950" stop-opacity="0.45"/>
+      <stop offset="0.5" stop-color="#a371f7" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3fb950" stop-opacity="0.45"/>
     </linearGradient>
     <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
       <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#141a22" stroke-width="1"/>
     </pattern>
-    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="1" fill="#ffffff" opacity="0.018"/>
-    </pattern>
-    <clipPath id="screen">
-      <rect x="1.5" y="51.5" width="877" height="387" rx="0"/>
-    </clipPath>
+    <filter id="ng" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
   <!-- window -->
   <rect x="1.5" y="1.5" width="877" height="437" rx="16" fill="url(#bg)" stroke="#21262d" stroke-width="3"/>
-
-  <!-- grid + scanlines inside screen area -->
   <rect x="3" y="52" width="874" height="385" fill="url(#grid)"/>
-  <rect x="3" y="52" width="874" height="385" fill="url(#scan)"/>
-  <radialGradient id="vig" cx="0.5" cy="0.42" r="0.85">
-    <stop offset="0" stop-color="#ffffff" stop-opacity="0.03"/>
-    <stop offset="1" stop-color="#000000" stop-opacity="0.25"/>
-  </radialGradient>
-  <rect x="3" y="52" width="874" height="385" fill="url(#vig)"/>
 
   <!-- title bar -->
   <circle cx="32" cy="25" r="7" fill="#ff5f56"/>
   <circle cx="56" cy="25" r="7" fill="#ffbd2e"/>
   <circle cx="80" cy="25" r="7" fill="#27c93f"/>
-  <text x="440" y="30" fill="#6e7681" font-size="15" text-anchor="middle">agontuk@sec: ~/audits (zsh)</text>
-  <text x="838" y="30" fill="#30363d" font-size="13" text-anchor="end">0x41474f4e54554b</text>
+  <text x="440" y="30" fill="#7d8790" font-size="15" text-anchor="middle">agontuk@sec: ~/audits (zsh)</text>
+  <text x="838" y="30" fill="#3d444d" font-size="13" text-anchor="end">0x41474f4e54554b</text>
   <line x1="1.5" y1="50" x2="878.5" y2="50" stroke="#21262d" stroke-width="2"/>
 
   <!-- whoami -->
   <text x="42" y="104" font-size="20">
-    <tspan fill="#3fb950">agontuk@sec</tspan><tspan fill="#8b949e">:~$ </tspan><tspan fill="#e6edf3">whoami</tspan>
+    <tspan fill="#3fb950">agontuk@sec</tspan><tspan fill="#9da9b6">:~$ </tspan><tspan fill="#f0f6fc">whoami</tspan>
   </text>
 
-  <text x="42" y="152" font-size="34" font-weight="700" fill="#3fb950">Agontuk<tspan dx="16" font-size="17" font-weight="400" fill="#8b949e">aka Neeloy</tspan></text>
+  <text x="42" y="152" font-size="34" font-weight="700" fill="#4ade80" filter="url(#ng)">Agontuk<tspan dx="16" font-size="17" font-weight="400" fill="#9da9b6">aka Neeloy</tspan></text>
   <text x="42" y="186" font-size="19">
-    <tspan fill="#e6edf3">Smart Contract Auditor</tspan><tspan fill="#6e7681"> · independent security researcher</tspan>
+    <tspan fill="#f0f6fc">Smart Contract Auditor</tspan><tspan fill="#9da9b6"> · independent security researcher</tspan>
   </text>
 
-  <line x1="42" y1="212" x2="838" y2="212" stroke="url(#glow)" stroke-width="1"/>
+  <line x1="42" y1="212" x2="838" y2="212" stroke="url(#glow)" stroke-width="1.5"/>
 
   <!-- record -->
   <text x="42" y="248" font-size="20">
-    <tspan fill="#3fb950">agontuk@sec</tspan><tspan fill="#8b949e">:~$ </tspan><tspan fill="#e6edf3">cat record.log</tspan>
+    <tspan fill="#3fb950">agontuk@sec</tspan><tspan fill="#9da9b6">:~$ </tspan><tspan fill="#f0f6fc">cat record.log</tspan>
   </text>
 
   <text x="42" y="284" font-size="19">
-    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> 60+ audits  ·  115+ valid findings  ·  $31K+ paid</tspan>
+    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#e9eef5"> 60+ audits  ·  125+ valid findings  ·  $32K+ paid</tspan>
   </text>
   <text x="42" y="316" font-size="19">
-    <tspan fill="#d29922">[★]</tspan><tspan fill="#c9d1d9"> best win: 2nd place Morpho Midnight  ·  $5,000</tspan>
+    <tspan fill="#e3b341">[★]</tspan><tspan fill="#e9eef5"> best win: 2nd place Morpho Midnight  ·  $5,000</tspan>
   </text>
   <text x="42" y="348" font-size="19">
-    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> 3 podiums  ·  14 top-10s  ·  1 critical  ·  40+ high</tspan>
+    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#e9eef5"> 3 podiums  ·  14 top-10s  ·  1 critical  ·  40+ high</tspan>
   </text>
 
   <!-- CTA -->
   <text x="42" y="396" font-size="20">
-    <tspan fill="#3fb950">agontuk@sec</tspan><tspan fill="#8b949e">:~$ </tspan><tspan fill="#e6edf3">audit </tspan><tspan fill="#a371f7">&lt;your-protocol&gt;</tspan><tspan fill="#e6edf3"> --private</tspan>
+    <tspan fill="#3fb950">agontuk@sec</tspan><tspan fill="#9da9b6">:~$ </tspan><tspan fill="#f0f6fc">audit </tspan><tspan fill="#c4a5ff"> &lt;your-protocol&gt;</tspan><tspan fill="#f0f6fc"> --private</tspan>
   </text>
-  <rect x="600" y="380" width="13" height="23" fill="#3fb950">
+  <rect x="606" y="380" width="13" height="23" fill="#3fb950">
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 </svg>
