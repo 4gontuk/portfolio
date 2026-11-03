@@ -18,9 +18,9 @@
 
 I go by Agontuk. I break smart contracts for a living.
 
-Since mid 2024 I have joined 60+ audit contests. Code4rena, Sherlock, Cantina, Immunefi, HackenProof. Also CodeHawks, Dual Guard and SpecSiege. I found 115+ real bugs. 40+ are high severity. One is critical. Two podiums are gold. Best single prize so far: $5,000 for 2nd place on Morpho Midnight.
+Since mid 2024 I have joined 60+ audit contests. Code4rena, Sherlock, Cantina, Immunefi, HackenProof. Also CodeHawks, Dual Guard and SpecSiege. I found 115+ real bugs. 40+ are high severity. One is critical. Two podiums are gold. Best single prize: $5,000 for 2nd place on Morpho Midnight.
 
-Most of my work is EVM DeFi. Lending markets, DEXes, perps, vaults, staking. Bridges and NFT systems too. Sometimes I leave the EVM. Starknet, Rust L1s, Substrate. If it holds money, I want to see where it breaks.
+Most of my work is EVM DeFi. Lending markets, DEXes, perps, vaults, staking. Bridges and NFT systems too. I also work outside the EVM. Rust, Substrate, Starknet, XRPL core. If it holds money, I want to see where it breaks.
 
 These days I mostly take private audits. Ping me if you need one.
 
@@ -64,100 +64,46 @@ $ ./agontuk --stats
 | [**Immunefi**](https://immunefi.com/audit-competition/audit-comp-quantus/leaderboard/) | `n3310y` | 4 valid Highs | #9 of 65 on Quantus. Rust L1, post quantum crypto, 64.8k lines of code |
 | **HackenProof** | `-` | **1 Critical** | public bounty |
 
-Also contest on CodeHawks, Dual Guard and SpecSiege.
+Also contest on CodeHawks, Dual Guard and SpecSiege. Full history on the three main profiles. Nothing hidden.
 
 ---
 
 ## `$ grep "critical\|high" findings/`
 
-Real bugs. All public. Want proof? Open the platform profiles.
+My sickest finds. Click a protocol name for proof.
+
+Code4rena rows go straight to the exact finding in the official report, my name on it. Sherlock findings live on [my Sherlock profile](https://audits.sherlock.xyz/watson/neeloy) under the same titles.
 
 | # | Severity | Protocol | Platform | Bug type | What happens |
 |---|---|---|---|---|---|
-| 01 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **XRP Ledger** | Sherlock | Access control | Batch multisignatures can be rebound to another account with the same signer list, so an attacker spends XRP without owning it |
-| 02 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **Fluid DEX v2** | Sherlock | Liquidity | Attacker drains pooled liquidity from honest suppliers |
-| 03 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **Ammplify** | Sherlock | Callback validation | Arbitrary token drain from Diamond through an unverified Uniswap V3 mint callback |
-| 04 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **Panoptic** | Code4rena | Initialization | Unprotected, re-initializable `BuilderWallet.init()`. Takeover and theft of builder fees |
-| 05 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **Olas** | Code4rena | Reentrancy | Cross-service reentrancy in `StakingBase._withdraw`. Protocol goes insolvent |
-| 06 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **Winnables Raffles** | Sherlock | ETH accounting | Wrong ETH locking in `refundPlayers`. Funds lock up forever |
-| 07 | <img src="https://img.shields.io/badge/HIGH%20%C3%972-e74c3c?style=flat-square" alt="high"/> | **Velocimeter** | Sherlock | Vote escrow | Delegation DoS at `MAX_DELEGATES` · rewards locked forever via `killGaugeTotally` · stale supply checkpoint pays users wrong rewards |
-| 08 | <img src="https://img.shields.io/badge/HIGH%20%C3%972-e74c3c?style=flat-square" alt="high"/> | **Chakra** | Code4rena | Cross chain | Anyone can mess with user nonces in the settlement contract. Old Starknet messages can be replayed by anyone |
+| 01 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **[XRP Ledger](https://audits.sherlock.xyz/watson/neeloy)** | Sherlock | Access control | Batch multisignatures can be rebound to another account with the same signer list. An attacker spends XRP without owning it. XRPL later rebuilt the whole Batch amendment as V1.1 over this bug class |
+| 02 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **[Fluid DEX v2](https://audits.sherlock.xyz/watson/neeloy)** | Sherlock | Liquidity | Attacker drains pooled liquidity from honest suppliers |
+| 03 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **[Ammplify](https://audits.sherlock.xyz/watson/neeloy)** | Sherlock | Callback validation | Arbitrary token drain from Diamond through an unverified Uniswap V3 mint callback |
+| 04 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **[Panoptic](https://code4rena.com/reports/2025-12-panoptic-next-core#h-01-builderwallet-init-is-unprotectedre-initializable-enabling-takeover-and-theft-of-builder-fees)** | Code4rena | Initialization | Unprotected, re-initializable `BuilderWallet.init()`. Takeover and theft of builder fees |
+| 05 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **[Olas](https://code4rena.com/audits/2026-01-olas/submissions/S-902)** | Code4rena | Reentrancy | Cross-service reentrancy in `StakingBase._withdraw`. Protocol goes insolvent |
+| 06 | <img src="https://img.shields.io/badge/HIGH%20%C3%972-e74c3c?style=flat-square" alt="high"/> | **[Velocimeter](https://audits.sherlock.xyz/watson/neeloy)** | Sherlock | Vote escrow | Delegation DoS at `MAX_DELEGATES` · rewards locked forever via `killGaugeTotally` · stale supply checkpoint pays users wrong rewards |
+| 07 | <img src="https://img.shields.io/badge/HIGH%20%C3%972-e74c3c?style=flat-square" alt="high"/> | **[Chakra](https://code4rena.com/reports/2024-08-chakra#h-07-anyone-can-manipulate-user-nonce-nonce_manager-in-settlement-contract)** | Code4rena | Cross chain | User nonces can be manipulated by anyone, [H-07](https://code4rena.com/reports/2024-08-chakra#h-07-anyone-can-manipulate-user-nonce-nonce_manager-in-settlement-contract) · processed Starknet messages replayable, [H-02](https://code4rena.com/reports/2024-08-chakra#h-02-in-starknet-already-processed-messages-can-be-re-submitted-and-by-anyone) |
+| 08 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **[LoopFi](https://code4rena.com/reports/2024-07-loopfi)** | Code4rena | Accounting | `AuraVault::claim` skips fee deduction from reward amounts. DoS or rewards silently lost |
 
 ---
 
 ## `$ history | grep podium`
 
-- 🥇 **1st, Covenant** (Code4rena)
-- 🥈 **2nd, Morpho Midnight** (Cantina · $400k pot · 3,890 findings submitted · [leaderboard](https://cantina.xyz/competitions/4679e0fa-85f7-4ea5-8827-ee6c70bdee6b/leaderboard)). Solid codebase, no HMs existed. My low and info reports ranked 2nd of everyone. $5,000
-- 🥈 **2nd, Sequence: Transaction Rails** (Code4rena)
-- 4th Sequence · 6th Pump Science · 9th Rujira. All Code4rena. That Rujira run: 4 High and 4 Medium in one contest
-- **14 top-10 finishes.** Sequence #4 · Velar #6, primev #6, Pump Science #6 · Reserve Core #7 · circuit-puzzles #8, hyperlend #8 · Axelar #9, Rujira #9 · Fluid DEX #10, Index Fun #10
-- 35x top-25 on Sherlock alone
+- 🥇 **1st, Covenant** (Code4rena). The official report names my writeup as [the judge's top score](https://code4rena.com/audits/2025-10-covenant/submissions/S-505)
+- 🥈 **2nd, Morpho Midnight** (Cantina). [$400k pot, 3,890 findings submitted](https://cantina.xyz/competitions/4679e0fa-85f7-4ea5-8827-ee6c70bdee6b/leaderboard). $5,000. My biggest single prize
+- 🥈 **2nd, Sequence: Transaction Rails** (Code4rena, [report](https://code4rena.com/reports/2025-11-sequence-transaction-rails))
+- 11 more top-10s: [#4 Sequence](https://code4rena.com/reports/2025-10-sequence) · [#6 Pump Science](https://code4rena.com/reports/2025-01-pump-science) · #6 Velar, primev · [#7 Reserve Core](https://code4rena.com/reports/2024-07-reserve-core) · #8 circuit-puzzles, hyperlend · [#9 Axelar Network](https://code4rena.com/reports/2024-08-axelar-network) · #9 Rujira, Quantus · #10 Fluid DEX v2, Index Fun
+- Sherlock and Cantina placements are on my profiles. Same handles, same results
 
 ---
 
-<details>
-<summary><b>$ cat full_battle_record.log</b> <i>(every public contest, click to open)</i></summary>
+## `$ ./scope --beyond-solidity`
 
-| Date | Contest | Platform | Place | Findings | Paid |
-|---|---|---|---|---|---|
-| Jun '26 | **Morpho Midnight** | Cantina | 🥈 **2nd** | info only | **$5,000.00** |
-| Jun '26 | DRE App (dreUSD) | Sherlock | #65 | - | $27.48 |
-| Apr '26 | **XRP Ledger** | Sherlock | **#14** | 1 H / 5 M | **$3,979.95** |
-| Apr '26 | Clear Macro by Superfluid | Sherlock | #57 | - | $15.79 |
-| Mar '26 | Chainlink Payment Abstraction V2 | Code4rena | #11 | 1 M | - |
-| Feb '26 | **Injective Peggy Bridge** | Code4rena | #16 | 1 H / 2 M | $44.12 |
-| Feb '26 | **Olas** | Code4rena | #54 | 1 H | $1.21 |
-| Feb '26 | **Fluid DEX v2** | Sherlock | **#10** | 1 H / 1 M | $194.51 |
-| Feb '26 | OpenCover Insured Vaults | Sherlock | #54 | - | $22.47 |
-| Feb '26 | Hotstuff | Sherlock | #39 | - | $29.70 |
-| Feb '26 | Flying Tulip | Sherlock | #84 | - | $117.32 |
-| Dec '25 | **Panoptic: Next Core** | Code4rena | #15 | 1 H / 4 M | $527.31 |
-| Dec '25 | **Rujira** | Code4rena | **#9** | 4 H / 4 M | $703.12 |
-| Dec '25 | Monolith Stablecoin Factory | Sherlock | #11 | 4 M | $208.42 |
-| Nov '25 | Swafe | Code4rena | #23 | 2 M | $15.58 |
-| Nov '25 | **Sequence: Transaction Rails** | Code4rena | 🥈 **2nd** | - | $189.47 |
-| Nov '25 | Megapot | Code4rena | #25 | 2 M | $0.13 |
-| Oct '25 | **Covenant** | Code4rena | 🥇 **1st** | - | $757.89 |
-| Oct '25 | Index Fun Order Book | Sherlock | **#10** | 1 M | $70.67 |
-| Oct '25 | **Sequence** | Code4rena | **#4** | 2 M | **$2,109.39** |
-| Sep '25 | **Ammplify** | Sherlock | #16 | 3 H / 4 M | $377.46 |
-| Aug '25 | Fluid | Code4rena | #16 | - | $764.94 |
-| Aug '25 | kuru-contracts | Cantina | #54 | 1 H | $313.61 |
-| May '25 | primev-validator-registry | Cantina | **#6** | 1 H | $0.18 |
-| May '25 | stability-contracts | Cantina | #26 | 1 H | $77.49 |
-| May '25 | circuit-puzzles | Cantina | **#8** | 1 H / 1 M | **$1,139.23** |
-| Apr '25 | mezo-monorepo | Cantina | #17 | 1 H | $977.49 |
-| Feb '25 | defi-app-contracts | Cantina | #26 | 1 H | $11.53 |
-| Jan '25 | daao-contracts | Cantina | #13 | 4 H / 1 M | $296.83 |
-| Jan '25 | dahlia-protocol | Cantina | #14 | 1 M | $1,137.14 |
-| Jan '25 | Liquid Ron | Code4rena | #11 | 1 M | - |
-| Jan '25 | Pump Science | Code4rena | **#6** | 1 M | $417.31 |
-| Dec '24 | SecondSwap | Code4rena | #45 | 1 H / 2 M | $6.98 |
-| Dec '24 | Oku (New Order Types) | Sherlock | #65 | 1 M | $0.01 |
-| Dec '24 | **Lambo.win** | Code4rena | #16 | 2 H / 1 M | $196.51 |
-| Nov '24 | Concrete | Code4rena | #55 | - | $141.88 |
-| Nov '24 | hyperlend | Cantina | **#8** | 1 M | **$2,708.38** |
-| Sep '24 | symbioticfi-core | Cantina | #22 | 1 M | $211.51 |
-| Aug '24 | Velar Artha PerpDEX | Sherlock | **#6** | 1 M | $873.14 |
-| Aug '24 | **Chakra** | Code4rena | #54 | 2 H | $2.03 |
-| Aug '24 | **Cork Protocol** | Sherlock | #15 | 1 H / 1 M | $31.50 |
-| Aug '24 | Rumpel Point Tokenization | Sherlock | #14 | - | $88.38 |
-| Aug '24 | Superposition | Code4rena | #32 | 1 M | $1.26 |
-| Aug '24 | **Phi** | Code4rena | #47 | 1 H | $9.15 |
-| Aug '24 | **zetachain-protocol** | Cantina | #16 | 2 H | **$2,162.62** |
-| Aug '24 | **Winnables Raffles** | Sherlock | #37 | 1 H | $1.80 |
-| Aug '24 | Sentiment V2 | Sherlock | #42 | 2 M | $12.96 |
-| Aug '24 | **Axelar Network** | Code4rena | **#9** | - | - |
-| Jul '24 | **Basin** | Code4rena | #11 | 1 H | $8.44 |
-| Jul '24 | **Reserve Core** | Code4rena | **#7** | - | - |
-| Jul '24 | **TraitForge** | Code4rena | #16 | 1 H / 2 M | $284.23 |
-| Jul '24 | **LoopFi** | Code4rena | #13 | 1 H / 3 M | **$1,493.94** |
-| Jul '24 | **Velocimeter** | Sherlock | #20 | 3 H / 2 M | $439.87 |
+- **Quantus** (Immunefi, #9 of 65). Rust, Substrate, lattice signatures, zk circuits. 64.8k lines of code
+- **XRP Ledger** (Sherlock, #14). XRPL core amendments. Batch multisigs, MPToken vaults, sponsorship. Not EVM
+- **Chakra** (Code4rena). Starknet, Cairo. Cross-chain messaging and settlement
 
-*Plus 4 private jobs on Sherlock Audit Engine (Uniswap, Aero, Polygon Heimdall V2, Kamino MetaVault) and 2 NDA audits. Contest numbers are from the Sherlock aggregate. Morpho row comes from Cantina.*
-
-</details>
+Non-EVM is not a side quest. I take these contests on purpose.
 
 ---
 
@@ -167,6 +113,7 @@ Real bugs. All public. Want proof? Open the platform profiles.
 
 - **2 classic private audits.** NDA. That is all I can say about those.
 - **4 on Sherlock Audit Engine.** Kamino MetaVault (finalizing now), Uniswap, Aero, Polygon Heimdall V2. 22+ valid findings there. $2.8K paid so far. One engagement alone paid $2,521.
+- No public links yet. Reports drop when clients publish them. The engagement names are the receipts.
 
 How I work:
 
