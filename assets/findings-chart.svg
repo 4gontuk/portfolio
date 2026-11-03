@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="250" viewBox="0 0 880 250" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace">
+  <!-- donut background ring -->
+  <circle cx="160" cy="125" r="78" fill="none" stroke="#161b22" stroke-width="26"/>
+
+  <!-- segments: C=490.1, total=119 -->
+  <!-- critical: 1 -> 4.12 -->
+  <circle cx="160" cy="125" r="78" fill="none" stroke="#c9143c" stroke-width="26"
+    stroke-dasharray="4.12 485.98" stroke-dashoffset="0" transform="rotate(-90 160 125)"/>
+  <!-- high: 42 -> 172.99 -->
+  <circle cx="160" cy="125" r="78" fill="none" stroke="#f0883e" stroke-width="26"
+    stroke-dasharray="172.99 317.11" stroke-dashoffset="-4.12" transform="rotate(-90 160 125)"/>
+  <!-- medium: 54 -> 222.40 -->
+  <circle cx="160" cy="125" r="78" fill="none" stroke="#e3b341" stroke-width="26"
+    stroke-dasharray="222.40 267.70" stroke-dashoffset="-177.11" transform="rotate(-90 160 125)"/>
+  <!-- private: 22 -> 90.59 -->
+  <circle cx="160" cy="125" r="78" fill="none" stroke="#a371f7" stroke-width="26"
+    stroke-dasharray="90.59 399.51" stroke-dashoffset="-399.51" transform="rotate(-90 160 125)"/>
+
+  <!-- center label -->
+  <text x="160" y="120" font-size="32" font-weight="700" fill="#e6edf3" text-anchor="middle">115+</text>
+  <text x="160" y="146" font-size="12" fill="#8b949e" text-anchor="middle">valid findings</text>
+
+  <!-- legend -->
+  <circle cx="330" cy="62" r="7" fill="#c9143c"/>
+  <text x="350" y="67" font-size="15" fill="#e6edf3">Critical <tspan fill="#8b949e">1 · HackenProof</tspan></text>
+
+  <circle cx="330" cy="102" r="7" fill="#f0883e"/>
+  <text x="350" y="107" font-size="15" fill="#e6edf3">High severity <tspan fill="#8b949e">42+ · public contests</tspan></text>
+
+  <circle cx="330" cy="142" r="7" fill="#e3b341"/>
+  <text x="350" y="147" font-size="15" fill="#e6edf3">Medium severity <tspan fill="#8b949e">54+ · public contests</tspan></text>
+
+  <circle cx="330" cy="182" r="7" fill="#a371f7"/>
+  <text x="350" y="187" font-size="15" fill="#e6edf3">Private audit engine <tspan fill="#8b949e">22+ · Sherlock AE</tspan></text>
+
+  <text x="330" y="224" font-size="12" fill="#6e7681">counts verified on public platform profiles · nov 2026</text>
+</svg>

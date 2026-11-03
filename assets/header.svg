@@ -9,10 +9,28 @@
       <stop offset="0.5" stop-color="#a371f7" stop-opacity="0.25"/>
       <stop offset="1" stop-color="#3fb950" stop-opacity="0.35"/>
     </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#141a22" stroke-width="1"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.018"/>
+    </pattern>
+    <clipPath id="screen">
+      <rect x="1.5" y="51.5" width="877" height="387" rx="0"/>
+    </clipPath>
   </defs>
 
   <!-- window -->
   <rect x="1.5" y="1.5" width="877" height="437" rx="16" fill="url(#bg)" stroke="#21262d" stroke-width="3"/>
+
+  <!-- grid + scanlines inside screen area -->
+  <rect x="3" y="52" width="874" height="385" fill="url(#grid)"/>
+  <rect x="3" y="52" width="874" height="385" fill="url(#scan)"/>
+  <radialGradient id="vig" cx="0.5" cy="0.42" r="0.85">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.03"/>
+    <stop offset="1" stop-color="#000000" stop-opacity="0.25"/>
+  </radialGradient>
+  <rect x="3" y="52" width="874" height="385" fill="url(#vig)"/>
 
   <!-- title bar -->
   <circle cx="32" cy="25" r="7" fill="#ff5f56"/>
@@ -47,9 +65,6 @@
   </text>
   <text x="42" y="348" font-size="19">
     <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> 3 podiums  ·  14 top-10s  ·  1 critical  ·  40+ high</tspan>
-  </text>
-  <text x="42" y="348" font-size="19">
-    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> c4 · sherlock · cantina · immunefi · hackenproof · +3</tspan>
   </text>
 
   <!-- CTA -->

@@ -18,7 +18,7 @@
 
 I go by Agontuk. I break smart contracts for a living.
 
-Since mid 2024 I have joined 60+ audit contests. Code4rena, Sherlock, Cantina, Immunefi, HackenProof. Also CodeHawks, Dual Guard and SpecSiege. I found 115+ real bugs. 40+ are high severity. One is critical. Two podiums are gold. Best single prize: $5,000 for 2nd place on Morpho Midnight.
+Since mid 2024 I have joined 60+ audit contests. Code4rena, Sherlock, Cantina, Immunefi, HackenProof. Also CodeHawks, Dual Guard and SpecSiege. I found 115+ real bugs. 40+ are high severity. One is critical. A gold podium, two silvers. Best single prize: $5,000 for 2nd place on Morpho Midnight.
 
 Most of my work is EVM DeFi. Lending markets, DEXes, perps, vaults, staking. Bridges and NFT systems too. I also work outside the EVM. Rust, Substrate, Starknet, XRPL core. If it holds money, I want to see where it breaks.
 
@@ -35,19 +35,15 @@ $ ./agontuk --stats
 ├─ audit contests ............. 60+
 ├─ valid findings ............. 115+  (1 critical · 40+ high · 50+ medium)
 ├─ paid out ................... $31K+
-├─ podiums .................... 3  (2 gold, 1 silver)
+├─ podiums .................... 3  (1 gold, 2 silver)
 ├─ top-10 finishes ............ 14
 ├─ protocols helped ........... 55+
 └─ private jobs ............... 6  (reports sealed)
 ```
 
-<p>
-  <img src="https://img.shields.io/badge/audits-60%2B-238636?style=flat-square" alt="audits"/>
-  <img src="https://img.shields.io/badge/findings-115%2B-da3633?style=flat-square" alt="findings"/>
-  <img src="https://img.shields.io/badge/paid-%2431K%2B-bf8700?style=flat-square" alt="paid"/>
-  <img src="https://img.shields.io/badge/top--10%20finishes-14x-8957e5?style=flat-square" alt="top-10 finishes"/>
-  <img src="https://img.shields.io/badge/critical-1-b40000?style=flat-square" alt="critical findings"/>
-</p>
+<div align="center">
+  <img src="assets/stats-cards.svg" width="880" alt="60+ audit contests · 115+ valid findings · $31K+ paid · 14x top-10 finishes"/>
+</div>
 
 *Numbers come from public profiles. Synced Nov 2026. Private stuff stays private.*
 
@@ -74,6 +70,10 @@ My sickest finds. Click a protocol name for proof.
 
 Code4rena rows go straight to the exact finding in the official report, my name on it. Sherlock findings live on [my Sherlock profile](https://audits.sherlock.xyz/watson/neeloy) under the same titles.
 
+<div align="center">
+  <img src="assets/findings-chart.svg" width="640" alt="Findings breakdown: 1 critical, 42+ high, 54+ medium public, 22+ private audit engine"/>
+</div>
+
 | # | Severity | Protocol | Platform | Bug type | What happens |
 |---|---|---|---|---|---|
 | 01 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **[XRP Ledger](https://audits.sherlock.xyz/watson/neeloy)** | Sherlock | Access control | Batch multisignatures can be rebound to another account with the same signer list. An attacker spends XRP without owning it. XRPL later rebuilt the whole Batch amendment as V1.1 over this bug class |
@@ -88,6 +88,10 @@ Code4rena rows go straight to the exact finding in the official report, my name 
 ---
 
 ## `$ history | grep podium`
+
+<div align="center">
+  <img src="assets/podium.svg" width="700" alt="Podium: 1st Covenant (Code4rena), 2nd Morpho Midnight (Cantina, $5,000), 2nd Sequence Rails (Code4rena)"/>
+</div>
 
 - 🥇 **1st, Covenant** (Code4rena). The official report names my writeup as [the judge's top score](https://code4rena.com/audits/2025-10-covenant/submissions/S-505)
 - 🥈 **2nd, Morpho Midnight** (Cantina). [$400k pot, 3,890 findings submitted](https://cantina.xyz/competitions/4679e0fa-85f7-4ea5-8827-ee6c70bdee6b/leaderboard). $5,000. My biggest single prize
@@ -137,6 +141,6 @@ Want one? [contact.agontuk@gmail.com](mailto:contact.agontuk@gmail.com)
 ---
 
 <div align="center">
-  <img src="https://img.shields.io/badge/status-open%20for%20private%20audits-3fb950?style=for-the-badge&labelColor=0d1117" alt="open for private audits"/><br/><br/>
+  <img src="assets/cta-banner.svg" width="880" alt="Open for private audits · foundry PoCs · plain reports · fix recheck · contact.agontuk@gmail.com"/><br/><br/>
   <sub>numbers pulled from public profiles · nov 2026</sub>
 </div>
