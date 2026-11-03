@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="440" viewBox="0 0 880 440" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0e14"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3fb950" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#a371f7" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#3fb950" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- window -->
+  <rect x="1.5" y="1.5" width="877" height="437" rx="16" fill="url(#bg)" stroke="#21262d" stroke-width="3"/>
+
+  <!-- title bar -->
+  <circle cx="32" cy="25" r="7" fill="#ff5f56"/>
+  <circle cx="56" cy="25" r="7" fill="#ffbd2e"/>
+  <circle cx="80" cy="25" r="7" fill="#27c93f"/>
+  <text x="440" y="30" fill="#6e7681" font-size="15" text-anchor="middle">agontuk@sec: ~/audits — zsh</text>
+  <text x="838" y="30" fill="#30363d" font-size="13" text-anchor="end">0x41474f4e54554b</text>
+  <line x1="1.5" y1="50" x2="878.5" y2="50" stroke="#21262d" stroke-width="2"/>
+
+  <!-- whoami -->
+  <text x="42" y="104" font-size="20">
+    <tspan fill="#3fb950">agontuk@sec</tspan><tspan fill="#8b949e">:~$ </tspan><tspan fill="#e6edf3">whoami</tspan>
+  </text>
+
+  <text x="42" y="152" font-size="34" font-weight="700" fill="#3fb950">Agontuk<tspan dx="16" font-size="17" font-weight="400" fill="#8b949e">aka Neeloy</tspan></text>
+  <text x="42" y="186" font-size="19">
+    <tspan fill="#e6edf3">Smart Contract Auditor</tspan><tspan fill="#6e7681"> · independent security researcher</tspan>
+  </text>
+
+  <line x1="42" y1="212" x2="838" y2="212" stroke="url(#glow)" stroke-width="1"/>
+
+  <!-- record -->
+  <text x="42" y="248" font-size="20">
+    <tspan fill="#3fb950">agontuk@sec</tspan><tspan fill="#8b949e">:~$ </tspan><tspan fill="#e6edf3">cat record.log</tspan>
+  </text>
+
+  <text x="42" y="284" font-size="19">
+    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> 55+ audits  ·  95+ valid findings  ·  $23K+ rewards</tspan>
+  </text>
+  <text x="42" y="316" font-size="19">
+    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> 2x 1st place  ·  13x top-10  ·  1 critical  ·  40+ high</tspan>
+  </text>
+  <text x="42" y="348" font-size="19">
+    <tspan fill="#3fb950">[ok]</tspan><tspan fill="#c9d1d9"> code4rena · sherlock · cantina · immunefi · hackenproof</tspan>
+  </text>
+
+  <!-- CTA -->
+  <text x="42" y="396" font-size="20">
+    <tspan fill="#3fb950">agontuk@sec</tspan><tspan fill="#8b949e">:~$ </tspan><tspan fill="#e6edf3">audit </tspan><tspan fill="#a371f7">&lt;your-protocol&gt;</tspan><tspan fill="#e6edf3"> --private</tspan>
+  </text>
+  <rect x="600" y="380" width="13" height="23" fill="#3fb950">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
