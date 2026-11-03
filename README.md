@@ -1,7 +1,7 @@
 <!-- agontuk · smart contract auditor portfolio · numbers pulled from public profiles, nov 2026 -->
 
 <div align="center">
-  <img src="assets/header.svg" width="880" alt="Agontuk, smart contract auditor. 55+ public contests, 6 private engagements, 125+ valid findings, $32K+ paid" />
+  <img src="assets/header.svg" width="880" alt="Agontuk, smart contract auditor. 55+ public contests, 6 private engagements, 125+ valid findings, $32K+ paid. Morpho Midnight 2nd, Kamino #3" />
 </div>
 
 <div align="center">
@@ -20,7 +20,7 @@ I go by Agontuk. I break smart contracts for a living.
 
 Since mid 2024 I have joined 55+ public audit contests. Code4rena, Sherlock, Cantina, Immunefi, HackenProof. Also CodeHawks, Dual Guard and SpecSiege. I found 125+ real bugs. 40+ are high severity. One is critical. A gold podium, two silvers. Best single prize: $5,000 for 2nd place on Morpho Midnight.
 
-Most of my work is EVM DeFi. Lending markets, DEXes, perps, vaults, staking. Bridges and NFT systems too. I also work outside the EVM. Rust, Substrate, Starknet, XRPL core. If it holds money, I want to see where it breaks.
+Most of my work is EVM DeFi. Lending markets, DEXes, perps, vaults, staking. Bridges and NFT systems too. I also work outside the EVM. Solana, Rust, Substrate, Starknet, XRPL core. zk proofs too. If it holds money, I want to see where it breaks.
 
 These days I mostly take private audits. Ping me if you need one.
 
@@ -99,15 +99,26 @@ Code4rena rows go straight to the exact finding in the official report, my name 
 - 11 more top-10s: [#4 Sequence](https://code4rena.com/reports/2025-10-sequence) · [#6 Pump Science](https://code4rena.com/reports/2025-01-pump-science) · #6 Velar, primev · [#7 Reserve Core](https://code4rena.com/reports/2024-07-reserve-core) · #8 circuit-puzzles, hyperlend · [#9 Axelar Network](https://code4rena.com/reports/2024-08-axelar-network) · #9 Rujira, Quantus · #10 Fluid DEX v2, Index Fun
 - Sherlock and Cantina placements are on my profiles. Same handles, same results
 
+Biggest single prizes:
+
+<div align="center">
+  <img src="assets/biggest-wins.svg" width="780" alt="Biggest prizes: Morpho Midnight $5,000, XRP Ledger $3,980, hyperlend $2,708, zetachain $2,163, Sequence $2,109, LoopFi $1,494, Kamino MetaVault $1,457"/>
+</div>
+
 ---
 
-## `$ ./scope --beyond-solidity`
+## `$ ./stack --beyond-solidity`
 
-- **Quantus** (Immunefi, #9 of 65). Rust, Substrate, lattice signatures, zk circuits. 64.8k lines of code
-- **XRP Ledger** (Sherlock, #14). XRPL core amendments. Batch multisigs, MPToken vaults, sponsorship. Not EVM
-- **Chakra** (Code4rena). Starknet, Cairo. Cross-chain messaging and settlement
+<div align="center">
+  <img src="assets/expertise-radar.svg" width="880" alt="Expertise radar: Solidity EVM deep, Rust strong, Solana Anchor growing, Substrate DLT strong, Starknet Cairo solid, zk proofs growing. Receipts: Quantus #9 of 65, XRP Ledger #14, circuit-puzzles 1H 1M #8, Chakra 2 highs"/>
+</div>
 
-Non-EVM is not a side quest. I take these contests on purpose.
+- **Solana**: Anchor, account model, CPI traps. Current focus. First Solana audits lining up.
+- **Blockchain / DLT**: Substrate runtime and XRPL core. Chain-level review, not just contracts. Quantus #9 of 65. Batch multisig find on XRP Ledger, #14.
+- **zk proofs**: circuit-puzzles on Cantina: 1 High, 1 Medium, #8 of field. Quantus zk components too. Little but growing fast.
+- **Starknet**: Cairo. Chakra: 2 high findings.
+
+Non-EVM is not a side quest. I take these on purpose.
 
 ---
 

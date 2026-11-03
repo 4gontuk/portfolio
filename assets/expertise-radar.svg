@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="320" viewBox="0 0 880 320" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace">
+  <defs>
+    <filter id="ng" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- grid hexagons, center (240,160) -->
+  <polygon points="240,40 343.9,100 343.9,220 240,280 136.1,220 136.1,100" fill="none" stroke="#21262d" stroke-width="1.5"/>
+  <polygon points="240,80.8 319.2,120.4 319.2,199.6 240,239.2 160.8,199.6 160.8,120.4" fill="none" stroke="#1b2129" stroke-width="1"/>
+  <polygon points="240,120.4 274.3,140.2 274.3,179.8 240,199.6 205.7,179.8 205.7,140.2" fill="none" stroke="#1b2129" stroke-width="1"/>
+  <!-- axes -->
+  <g stroke="#21262d" stroke-width="1">
+    <line x1="240" y1="160" x2="240" y2="40"/>
+    <line x1="240" y1="160" x2="343.9" y2="100"/>
+    <line x1="240" y1="160" x2="343.9" y2="220"/>
+    <line x1="240" y1="160" x2="240" y2="280"/>
+    <line x1="240" y1="160" x2="136.1" y2="220"/>
+    <line x1="240" y1="160" x2="136.1" y2="100"/>
+  </g>
+
+  <!-- data polygon -->
+  <polygon points="240,40 317.9,115 307.5,199 240,244 177.6,199 203.6,139"
+    fill="#3fb950" fill-opacity="0.16" stroke="#4ade80" stroke-width="2"/>
+  <g fill="#4ade80" filter="url(#ng)">
+    <circle cx="240" cy="40" r="4.5"/>
+    <circle cx="317.9" cy="115" r="4.5"/>
+    <circle cx="307.5" cy="199" r="4.5"/>
+    <circle cx="240" cy="244" r="4.5"/>
+    <circle cx="177.6" cy="199" r="4.5"/>
+    <circle cx="203.6" cy="139" r="4.5"/>
+  </g>
+
+  <!-- axis labels -->
+  <text x="240" y="26" font-size="14" font-weight="700" fill="#f0f6fc" text-anchor="middle">Solidity · EVM</text>
+  <text x="352" y="104" font-size="13" fill="#e9eef5">Rust</text>
+  <text x="350" y="216" font-size="13" fill="#e9eef5">Solana · Anchor</text>
+  <text x="240" y="272" font-size="13" fill="#e9eef5" text-anchor="middle">Substrate / DLT</text>
+  <text x="130" y="216" font-size="13" fill="#e9eef5" text-anchor="end">Starknet · Cairo</text>
+  <text x="128" y="132" font-size="13" fill="#e9eef5" text-anchor="end">zk proofs</text>
+
+  <!-- receipts -->
+  <text x="560" y="70" font-size="13" fill="#9da9b6">receipts:</text>
+  <text x="560" y="102" font-size="13" fill="#e9eef5">40+ high findings on EVM, public</text>
+  <text x="560" y="132" font-size="13" fill="#e9eef5">Quantus (Substrate, Rust) #9 of 65</text>
+  <text x="560" y="162" font-size="13" fill="#e9eef5">XRP Ledger core, #14 · batch multisig</text>
+  <text x="560" y="192" font-size="13" fill="#e9eef5">circuit-puzzles, zk: 1 H + 1 M, #8</text>
+  <text x="560" y="222" font-size="13" fill="#e9eef5">Chakra, Cairo: 2 high findings</text>
+  <text x="560" y="252" font-size="13" fill="#e9eef5">Solana: current focus, audits lining up</text>
+  <text x="560" y="288" font-size="11" fill="#7d8790">self-rated depth · receipts linked in this readme</text>
+</svg>
