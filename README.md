@@ -31,8 +31,8 @@ Record: **55+ public contests** · **6 private engagements** · **125+ valid fin
 | Project | Protocol Type | Platform | Result |
 |---|---|---|---|
 | **[Covenant](https://code4rena.com/audits/2025-10-covenant/submissions/S-505)** | On-chain wealth management | Code4rena | **1 🏅** |
+| **[Sequence: Transaction Rails](https://code4rena.com/reports/2025-11-sequence-transaction-rails)** | Smart wallet transaction rails | Code4rena | **1 🏅** |
 | **[Morpho Midnight](https://cantina.xyz/competitions/4679e0fa-85f7-4ea5-8827-ee6c70bdee6b/leaderboard)** | Fixed-rate lending | Cantina | **2 🥈** |
-| **[Sequence: Transaction Rails](https://code4rena.com/reports/2025-11-sequence-transaction-rails)** | Smart wallet transaction rails | Code4rena | **2 🥈** |
 | **[Sequence](https://code4rena.com/reports/2025-10-sequence)** | Smart wallet platform | Code4rena | 4 |
 | Velar Artha | Perpetuals DEX | Sherlock | 6 |
 | primev Validator Registry | Validator & registry infrastructure | Cantina | 6 |
@@ -49,7 +49,7 @@ Record: **55+ public contests** · **6 private engagements** · **125+ valid fin
 40+ more contests with top-25 finishes and payouts. Full history on the profiles above. Also contest on CodeHawks, Dual Guard and SpecSiege.
 
 <div align="center">
-  <img src="assets/podium.svg" width="700" alt="Podium: 1st Covenant (Code4rena), 2nd Morpho Midnight (Cantina, $5,000), 2nd Sequence Rails (Code4rena)"/>
+  <img src="assets/podium.svg" width="700" alt="Podium: 1st Covenant and 1st Sequence Rails (Code4rena co-champions), 2nd Morpho Midnight (Cantina, 5,000 dollars)"/>
 </div>
 
 Covenant's official report names my writeup as [the judge's top score](https://code4rena.com/audits/2025-10-covenant/submissions/S-505).
