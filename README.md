@@ -72,7 +72,7 @@ Biggest single prizes:
 | Uniswap | October 2026 | Sherlock Audit Engine | AMM / DEX | Results public |
 | Aero | October 2026 | Sherlock Audit Engine | DEX (Base) | Results public |
 | Polygon Heimdall V2 | July 2026 | Sherlock Audit Engine | L1 client (Polygon) | Results public |
-| Undisclosed ×2 | 2025 · 2026 | Independent | — | Private (NDA) |
+| Undisclosed ×2 | 2025 · 2026 | Independent | - | Private (NDA) |
 
 Kamino MetaVault: **10 accepted findings** (2 High · 2 Medium · 6 Low), 71.4% precision, **$1,456.80** paid.
 
