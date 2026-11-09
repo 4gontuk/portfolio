@@ -4,6 +4,10 @@
   <img src="assets/header.svg" width="880" alt="Agontuk, smart contract auditor. 55+ public contests, 6 private engagements, 125+ valid findings, $32K+ paid. Morpho Midnight 2nd, Kamino #3" />
 </div>
 
+<div align="center">
+  <sub><b>jump to:</b> <a href="#public-engagements">public engagements</a> · <a href="#private-engagements">private engagements</a> · <a href="#selected-findings">findings</a> · <a href="#stack--learning">stack</a> · <a href="#how-i-work">how I work</a> · <a href="#contact">contact</a></sub>
+</div>
+
 ---
 
 ## Profile Summary
@@ -101,6 +105,14 @@ Code4rena rows go straight to the exact finding in the official report, my name 
 | 07 | <img src="https://img.shields.io/badge/HIGH%20%C3%972-e74c3c?style=flat-square" alt="high"/> | **[Chakra](https://code4rena.com/reports/2024-08-chakra#h-07-anyone-can-manipulate-user-nonce-nonce_manager-in-settlement-contract)** | Code4rena | Cross chain | User nonces can be manipulated by anyone, [H-07](https://code4rena.com/reports/2024-08-chakra#h-07-anyone-can-manipulate-user-nonce-nonce_manager-in-settlement-contract) · processed Starknet messages replayable, [H-02](https://code4rena.com/reports/2024-08-chakra#h-02-in-starknet-already-processed-messages-can-be-re-submitted-and-by-anyone) |
 | 08 | <img src="https://img.shields.io/badge/HIGH-e74c3c?style=flat-square" alt="high"/> | **[LoopFi](https://code4rena.com/reports/2024-07-loopfi)** | Code4rena | Accounting | `AuraVault::claim` skips fee deduction from reward amounts. DoS or rewards silently lost |
 
+What my findings look like in a report (this one is real and public):
+
+<div align="center">
+  <img src="assets/report-sample.svg" width="820" alt="Sample finding report: HIGH, Insolvency via cross-service reentrancy in StakingBase._withdraw, Olas, Code4rena. What happens, proof of concept, the fix."/>
+</div>
+
+*That is the exact format every finding ships in: severity · impact · runnable PoC · plain fix.*
+
 ---
 
 ## Stack & Learning
@@ -123,6 +135,10 @@ Learning right now: Solana security deep dive, zk proof systems.
 ---
 
 ## How I Work
+
+<div align="center">
+  <img src="assets/process.svg" width="880" alt="How an audit runs: 1 Scope day 0, 2 Deep read days 1-5, 3 Attack days 5-9 with foundry PoCs, 4 Report within 48h, 5 Recheck free"/>
+</div>
 
 - I read all the code. Then I try to steal from it.
 - Every bug ships with a working proof of concept.
